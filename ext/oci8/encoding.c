@@ -172,7 +172,7 @@ static VALUE oci8_charset_name2id(VALUE svc, VALUE name)
  * @since 2.0.0
  * @deprecated Use {OCI8.charset_id2name} instead.
  */
-static VALUE oci8_charset_id2name(VALUE svc, VALUE name)
+VALUE oci8_charset_id2name(VALUE svc, VALUE name)
 {
     rb_warning("Use OCI8.charset_id2name instead of OCI8#charset_id2name.");
     return oci8_s_charset_id2name(Qnil, name);
